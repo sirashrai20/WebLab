@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+    <form>
+        <label>First Name:</label>
+        <input type="text" required><br>
+
+        <label>Last Name:</label>
+        <input type="text" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" value="Male">
+        <label>Male</label>
+        <input type="radio" value="Female">
+        <label>Female</label><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" required><br>7
+
+        <label>Email:</label>
+        <input type="email" required><br>
+
+        <label>Phone Number:</label>
+        <input type="tel" pattern="[0-9]{10}" placeholder="e.g., 1234567890" required><br>
+        <legend>Academic Information</legend>
+        <label>Department:</label>
+        <select required>
+            <option value="engineering">Engineering</option>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+            <option value="business">Business</option>
+        </select><br>
+
+        <label>Year of Enrollment:</label>
+        <input type="number" min="1900" max="2099" step="1" required><br>
+
+        <label>About Yourself:</label><br>
+        <textarea rows="4" cols="50" required></textarea><br>
+
+        <input type="checkbox" value="yes">
+        <label>Subscribe to Newsletter</label><br>
+
+        <input type="file" accept=".pdf, .doc, .docx"><br>
+
+
+        <legend>Choose a Profile Picture</legend>
+        <input type="file" accept="image/*">
+
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
